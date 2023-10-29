@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+  <include file="$(find las_viewer)/launch/las_viewer.launch"/>
+  <include file="$(find gnss_viewer)/launch/gnss_viewer.launch"/>
+
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find las_viewer)/../../../data/rviz/rviz.rviz"/>
+
+</launch>

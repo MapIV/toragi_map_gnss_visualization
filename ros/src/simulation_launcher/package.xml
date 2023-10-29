@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>simulation_launcher</name>
+  <version>0.0.0</version>
+  <description>The simulation_launcher package</description>
+
+  <maintainer email="aoki.takanose@map4.jp">Aoki Takanose</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <export>
+  </export>
+</package>

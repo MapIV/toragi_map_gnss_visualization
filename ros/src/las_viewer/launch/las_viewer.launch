@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+  <arg name="leafsize" default="1"/>
+  <arg name="las_file" 
+    default="$(find las_viewer)/../../../data/map/08oc7243.las $(find las_viewer)/../../../data/map/08oc7244.las $(find las_viewer)/../../../data/map/08oc7253.las $(find las_viewer)/../../../data/map/08oc7254.las $(find las_viewer)/../../../data/map/08oc7263.las $(find las_viewer)/../../../data/map/08oc7264.las"/>
+
+  <node pkg="las_viewer" name="las_viewer_node" type="las_viewer_node">
+    <param name="leafsize" value="$(arg leafsize)"/>
+    <param name="las_file" value="$(arg las_file)"/>
+  </node>
+
+</launch>

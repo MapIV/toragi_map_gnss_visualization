@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+  <arg name="nmea_sentence_topic_name" default="/gnss/main/nmea_sentence"/>
+  <arg name="plane_num" default="8"/>
+  <arg name="update_distance" default="0.3"/>
+
+  <node pkg="gnss_viewer" name="gnss_viewer_node" type="gnss_viewer_node">
+      <param name="nmea_sentence_topic_name" value="$(arg nmea_sentence_topic_name)"/>
+      <param name="plane_num" value="$(arg plane_num)"/>
+      <param name="update_distance" value="$(arg update_distance)"/>
+  </node>
+
+
+</launch>
