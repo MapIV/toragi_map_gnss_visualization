@@ -9,11 +9,12 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   tf
   sensor_msgs
+  nmea_msgs
 )
 
 ## Declare a catkin package
 catkin_package(
-  CATKIN_DEPENDS roscpp sensor_msgs
+  CATKIN_DEPENDS roscpp sensor_msgs nmea_msgs
 )
 
 ## Specify additional locations of header files
